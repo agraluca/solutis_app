@@ -10,6 +10,25 @@
   padding: 3rem;
 }
 
-img .single-post {
+.single-post {
   height: 400px;
+}
+
+.single-post button {
+  background: #a30500;
+  color: #fff;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  border: none;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2;
+}
+
+.single-post button:hover {
+  opacity: 0.8;
 }

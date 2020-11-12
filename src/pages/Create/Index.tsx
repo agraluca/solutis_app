@@ -1,22 +1,25 @@
 import React, { useState, FormEvent } from "react";
 import Header from "../../components/Header/Index";
 import api from "../../services/api";
+import { RiUnsplashFill } from "react-icons/ri";
 
 import "./create.css";
 
-function Create() {
+function Create(props: any) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [url, setUrl] = useState("");
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    api.post("/upload", {
+    const res = await api.post("/upload", {
       title,
       description,
       imageUrl: url,
     });
+    props.history.push(`/view/${res.data._id}`);
   }
+
   return (
     <div id="create-page">
       <Header />
@@ -49,6 +52,12 @@ function Create() {
               onChange={(e) => setUrl(e.target.value)}
             />
           </div>
+          <section className="unsplash-icon">
+            <a rel="noopener norefer" href="https://unsplash.com/">
+              <RiUnsplashFill />
+              <h6>Procure por imagens nesse site e cole a url logo acima.</h6>
+            </a>
+          </section>
         </fieldset>
         <button type="submit">Enviar</button>
       </form>

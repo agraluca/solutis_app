@@ -78,5 +78,25 @@
 }
 
 #create-page form #url {
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
+}
+
+.unsplash-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+.unsplash-icon a {
+  line-height: 2rem;
+  text-decoration: none;
+  color: #0c2d48;
+  display: flex;
+  align-items: center;
+}
+
+.unsplash-icon a:hover {
+  opacity: 0.9;
 }

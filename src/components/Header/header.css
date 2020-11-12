@@ -1,0 +1,36 @@
+#header-menu {
+  width: 100%;
+  background: linear-gradient(330deg, #b1d4e0 0%, #2e8bc0 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 0.5rem;
+}
+
+#header-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#header-menu ul li {
+  margin: 1rem 1rem;
+}
+
+#header-menu ul li a {
+  text-decoration: none;
+  color: #0c2d48;
+  font-size: 2rem;
+}
+
+#header-menu ul li a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  #header-menu {
+    flex-direction: column;
+  }
+}

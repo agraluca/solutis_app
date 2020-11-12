@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #b1d4e0;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  letter-spacing: -0.05rem;
+}
+
+.logo svg {
+  color: #0c2d48;
+  font-size: 3.5rem;
+}

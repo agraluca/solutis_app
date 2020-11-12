@@ -1,0 +1,82 @@
+#create-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#create-page form {
+  width: 800px;
+  margin: 0 auto;
+  background: #f5f8fa; /*f5f8fa ;;;;; f5f8fa */
+  border: 1px solid #79b5d2;
+  border-radius: 10px;
+  padding: 4rem 5rem;
+}
+
+#create-page form fieldset {
+  border: 0;
+}
+
+#create-page form fieldset legend {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #0c2d48;
+  font-weight: 700;
+  border-bottom: 1px solid #0c2d48;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+#create-page form .input-block label {
+  display: flex;
+  color: #0c2d48;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+#create-page form .input-block input,
+#create-page form .input-block textarea {
+  width: 100%;
+  height: 2rem;
+  background: #f5f8fa;
+  border: 1px solid #d3e2e5;
+  border-radius: 6px;
+  outline: none;
+  color: #3b3b3b;
+}
+
+#create-page form .input-block input {
+  padding: 1rem;
+}
+
+#create-page form .input-block textarea {
+  min-height: 7rem;
+  max-height: 11rem;
+  resize: vertical;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+#create-page form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  cursor: pointer;
+  background: #0c2d48;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+#create-page form button:hover {
+  background: #124269;
+}
+
+#create-page form #url {
+  margin-bottom: 2rem;
+}

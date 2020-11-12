@@ -1,0 +1,13 @@
+[1112/140411.951:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140411.970:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[1112/140411.987:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140606.181:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140606.197:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[1112/140606.202:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140707.592:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140707.632:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[1112/140707.641:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140946.229:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)
+[1112/140946.241:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1112/140946.257:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[1112/140946.270:ERROR:file_io_win.cc(180)] CreateFile C:\Users\agral\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: Acesso negado. (0x5)

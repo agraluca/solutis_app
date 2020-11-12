@@ -6,7 +6,7 @@
 }
 
 #create-page form {
-  width: 800px;
+  width: 50%;
   margin: 0 auto;
   background: #f5f8fa; /*f5f8fa ;;;;; f5f8fa */
   border: 1px solid #79b5d2;
@@ -99,4 +99,25 @@
 
 .unsplash-icon a:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+  #create-page form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .unsplash-icon a {
+    flex-direction: column;
+    line-height: 1rem;
+  }
+
+  #create-page form fieldset legend {
+    font-size: 1.6rem;
+  }
+  #create-page form {
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+  }
 }

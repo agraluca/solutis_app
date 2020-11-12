@@ -8,7 +8,7 @@ import api from "../../services/api";
 
 import "./view.css";
 
-interface Posts {
+interface PostsView {
   _id: string;
   title: string;
   description: string;
@@ -17,7 +17,7 @@ interface Posts {
 
 function View() {
   const [isLoading, setIsLoading] = useState(true);
-  const [posts, setPosts] = useState<Posts[]>([]);
+  const [posts, setPosts] = useState<PostsView[]>([]);
 
   useEffect(() => {
     async function getPosts() {

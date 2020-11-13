@@ -2,6 +2,7 @@ import React, { useState, FormEvent } from "react";
 import Header from "../../components/Header/Index";
 import api from "../../services/api";
 import { RiUnsplashFill } from "react-icons/ri";
+import { withRouter } from "react-router-dom";
 
 import "./create.css";
 
@@ -65,4 +66,4 @@ function Create(props: any) {
   );
 }
 
-export default Create;
+export default withRouter(Create);

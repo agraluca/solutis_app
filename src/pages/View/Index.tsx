@@ -23,7 +23,7 @@ function View() {
     async function getPosts() {
       const res = await api.get("/view");
       console.log(res.data);
-      setPosts(res.data);
+      setPosts(res.data.reverse());
       setIsLoading(false);
     }
     getPosts();

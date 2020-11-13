@@ -5,6 +5,7 @@ import Posts from "../../components/Posts/Index";
 import api from "../../services/api";
 import Skeleton from "../../components/Skeleton/Index";
 import { RiDeleteBin5Fill } from "react-icons/ri";
+import { withRouter } from "react-router-dom";
 
 import "./single.css";
 
@@ -56,11 +57,11 @@ function ViewSingle(props: any) {
           description={singlePost.description}
         />
         <button onClick={handleDelete}>
-          <RiDeleteBin5Fill /> Deletar
+          <RiDeleteBin5Fill />
         </button>
       </div>
     </div>
   );
 }
 
-export default ViewSingle;
+export default withRouter(ViewSingle);

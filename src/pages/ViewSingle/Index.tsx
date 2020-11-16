@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Header from "../../components/Header/Index";
 import Posts from "../../components/Posts/Index";
 import api from "../../services/api";
 import Skeleton from "../../components/Skeleton/Index";
 import { RiDeleteBin5Fill } from "react-icons/ri";
-import { withRouter } from "react-router-dom";
+import { RiEdit2Line } from "react-icons/ri";
+
+import { withRouter, useLocation } from "react-router-dom";
 
 import "./single.css";
 
@@ -56,9 +58,14 @@ function ViewSingle(props: any) {
           imageUrl={singlePost.imageUrl}
           description={singlePost.description}
         />
-        <button onClick={handleDelete}>
-          <RiDeleteBin5Fill />
-        </button>
+        <section className="edit-delete">
+          <button onClick={handleDelete}>
+            <RiDeleteBin5Fill />
+          </button>
+          <Link to={`/view/${params.id}/edit`}>
+            <RiEdit2Line />
+          </Link>
+        </section>
       </div>
     </div>
   );

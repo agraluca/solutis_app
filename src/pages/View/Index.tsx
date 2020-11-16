@@ -43,25 +43,18 @@ function View() {
         <Header />
 
         <main className="grid-template">
-          {!isLoading
-            ? posts.map((post) => {
-                return (
-                  <Link key={post._id} to={`/view/${post._id}`}>
-                    <Posts
-                      title={`${post.title.substring(0, 20)}...`}
-                      imageUrl={post.imageUrl}
-                      description={`${post.description.substring(0, 20)}...`}
-                    />
-                  </Link>
-                );
-              })
-            : posts.map((post) => {
-                return (
-                  <Link key={post._id} to={`/view/${post._id}`}>
-                    <Skeleton />
-                  </Link>
-                );
-              })}
+          {!isLoading &&
+            posts.map((post) => {
+              return (
+                <Link key={post._id} to={`/view/${post._id}`}>
+                  <Posts
+                    title={`${post.title.substring(0, 10)}...`}
+                    imageUrl={post.imageUrl}
+                    description={`${post.description.substring(0, 20)}...`}
+                  />
+                </Link>
+              );
+            })}
         </main>
       </div>
     </div>

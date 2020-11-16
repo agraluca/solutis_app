@@ -5,13 +5,12 @@
   flex-direction: column;
 }
 .single-post {
-  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 1100px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem 0 5rem 0;
 }
 
@@ -53,6 +52,7 @@
   border-radius: 8px;
   justify-content: center;
   align-items: center;
+  transition: all 0.2;
 }
 
 .single-post .edit-delete a:hover {

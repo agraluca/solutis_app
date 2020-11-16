@@ -7,7 +7,7 @@ import Skeleton from "../../components/Skeleton/Index";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { RiEdit2Line } from "react-icons/ri";
 
-import { withRouter, useLocation } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import "./single.css";
 

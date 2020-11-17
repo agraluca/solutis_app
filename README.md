@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="CoffeTime" title="CoffeTime" src=".github/logo.png" />
+    CoffeTime
 </h1>
 
 <h3 align="center">
@@ -49,13 +49,13 @@ Além disso implementei as seguintes funcionalidades:
 - Deploy no Netlify: [CoffeTime](https://solutisapp.netlify.app/)
 
 ## 💻 Começando
+
 Para começar precisamos instalar algumas coisas
 
 ### Requerimentos
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/)
-
 
 ```bash
 $ git clone https://github.com/agraluca/solutis_app && cd solutis_app
@@ -65,7 +65,6 @@ $ git clone https://github.com/agraluca/solutis_app && cd solutis_app
 
 ### Web
 
-
 ```bash
 
 # Instale as dependências
@@ -74,8 +73,6 @@ $ yarn
 # Rodando o cliente
 $ yarn start
 ```
-
-
 
 ## 📝 Licença
 

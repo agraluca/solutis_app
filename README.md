@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img alt="CoffeTime" src=".github/happy.png" width="100%">
+  <img alt="CoffeTime" src=".github/coffetime.png" width="100%">
 </p>
 
 ## :bulb: Sobre o projeto

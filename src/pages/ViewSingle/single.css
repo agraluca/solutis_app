@@ -15,12 +15,13 @@
 }
 
 .single-post .edit-delete button {
-  background: #a30500;
+  cursor: pointer;
+  background: #B80600;
   color: #fff;
   margin: 2rem 0;
   padding: 1.5rem;
   height: 2rem;
-  width: 65%;
+  width: 30%;
   display: flex;
   border: none;
   border-radius: 8px;
@@ -42,9 +43,10 @@
   justify-content: space-evenly;
 }
 .single-post .edit-delete a {
-  width: 30%;
+
+  width: 65%;
   display: flex;
-  background: #a3ccc3;
+  background: #509183;
   color: #fff;
   margin: 2rem 0;
   padding: 1.5rem;

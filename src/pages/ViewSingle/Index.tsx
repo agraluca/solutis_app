@@ -59,12 +59,12 @@ function ViewSingle(props: any) {
           description={singlePost.description}
         />
         <section className="edit-delete">
-          <button onClick={handleDelete}>
-            <RiDeleteBin5Fill />
-          </button>
           <Link to={`/view/${params.id}/edit`}>
             <RiEdit2Line />
           </Link>
+          <button onClick={handleDelete}>
+            <RiDeleteBin5Fill />
+          </button>
         </section>
       </div>
     </div>

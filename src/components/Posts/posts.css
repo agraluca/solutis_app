@@ -11,7 +11,10 @@
 
 #post-content img {
   width: 100%;
-  height: 350px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 350px; 
   border-radius: 8px 8px 0 0;
   border-bottom: 1px solid #b1d4e0;
 }

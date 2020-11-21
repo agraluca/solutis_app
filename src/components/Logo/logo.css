@@ -1,10 +1,15 @@
-.logo {
+.logo a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
-.logo h1 {
+.logo a:hover {
+  opacity: 0.8;
+}
+
+.logo a h1 {
   color: #b1d4e0;
   text-transform: uppercase;
   font-size: 3.5rem;
@@ -13,7 +18,7 @@
   letter-spacing: -0.05rem;
 }
 
-.logo svg {
+.logo a svg {
   color: #0c2d48;
   font-size: 3.5rem;
 }

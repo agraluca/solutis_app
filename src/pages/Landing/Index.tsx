@@ -14,14 +14,15 @@ function Landing() {
       <div className="wrapper">
         <section>
           <Logo />
-
           <p>
             Interdum et fames ac ante ipsum. Aenean dapibus ullamcorper
             efficitur.
           </p>
-          <Link to="/view">
-            <FiCornerDownRight />
-          </Link>
+          <div className="enter-view">
+            <Link to="/view" className="enter-view">
+              <FiCornerDownRight />
+            </Link>
+          </div>
         </section>
         <img
           src={logoLanding}

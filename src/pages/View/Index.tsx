@@ -9,21 +9,9 @@ import api from "../../services/api";
 
 import "./view.css";
 
-import { Post } from "../../store/posts";
 import { RootState } from "../../store";
 
-interface PostsView {
-  _id: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  posts: Post;
-}
-
 function View() {
-  // const {data} = useSelector<PostsState | PostsState["posts"]>(
-  //   (state) => state.posts
-  // );
   const posts = useSelector((state: RootState) => state.postsReducer.posts);
   const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
@@ -31,14 +19,11 @@ function View() {
   useEffect(() => {
     async function getPosts() {
       const res = await api.get("/view");
-      console.log(res.data);
       dispatch({ type: "GET_POST", payload: res.data.reverse() });
       setIsLoading(false);
     }
     getPosts();
   }, []);
-
-  console.log(posts);
 
   if (isLoading) {
     return (
@@ -48,7 +33,7 @@ function View() {
       </>
     );
   }
-  // return <div>{JSON.stringify(data)}</div>;
+
   return (
     <div id="page-post">
       <div className="view-wrapper">

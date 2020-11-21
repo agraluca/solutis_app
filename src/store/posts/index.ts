@@ -13,7 +13,7 @@ export interface PostsState {
 }
 
 const initialState: PostsState = {
-  posts: Post[] =  [
+  posts: [
     {
       _id: 1,
       title: "Ola",

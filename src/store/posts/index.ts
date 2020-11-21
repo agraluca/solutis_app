@@ -1,44 +1,32 @@
-import React from "react";
-import { createAction, createReducer } from "@reduxjs/toolkit";
-
 export interface Post {
-    _id: number;
-    title: string;
-    description: string;
-    imageUrl: string;
+  _id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
 }
 
 export interface PostsState {
-    posts: Post[]
+  posts: Post[];
 }
 
 const initialState: PostsState = {
-  posts: [
-    {
-      _id: 1,
-      title: "Ola",
-      description: "oi",
-      imageUrl: "https://google.com/images/",
-    }
-  ]
-  
+  posts: [],
 };
 
-type Action = { type: "GET_POST"; payload: Post };
+type Action = { type: "GET_POST"; payload: Post[] };
 
 export const postsReducer = (
   state = initialState,
   action: Action
-):PostsState => {
+): PostsState => {
   switch (action.type) {
     case "GET_POST": {
-      return { ...state, posts: [...state.posts, action.payload] };
+      return { ...state, posts: [...action.payload] };
     }
+
     default:
       return state;
   }
 };
 
-export default postsReducer
-
-
+export default postsReducer;

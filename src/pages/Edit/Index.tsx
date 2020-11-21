@@ -21,8 +21,6 @@ function Edit(props: any) {
       setTitle(res.data.title);
       setDescription(res.data.description);
       setUrl(res.data.imageUrl);
-      console.log(res.data);
-      console.log(res.data._id);
     }
     getSinglePostEdit();
   }, [params.id]);

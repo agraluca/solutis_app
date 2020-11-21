@@ -29,8 +29,6 @@ function ViewSingle(props: any) {
     async function getSinglePost() {
       const res = await api.get(`/view/${params.id}`);
       setSinglePost(res.data);
-
-      console.log(res.data._id);
     }
     getSinglePost();
   }, [params.id]);

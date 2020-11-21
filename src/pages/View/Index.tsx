@@ -9,7 +9,7 @@ import api from "../../services/api";
 
 import "./view.css";
 
-import postsReducer, { PostsState, Post } from "../../store/posts";
+import { Post } from "../../store/posts";
 import { RootState } from "../../store";
 
 interface PostsView {

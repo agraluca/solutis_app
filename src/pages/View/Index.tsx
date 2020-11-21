@@ -23,7 +23,7 @@ function View() {
       setIsLoading(false);
     }
     getPosts();
-  }, []);
+  }, [dispatch]);
 
   if (isLoading) {
     return (

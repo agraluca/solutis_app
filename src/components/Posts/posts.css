@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  height: 350px; 
+  height: 350px;
   border-radius: 8px 8px 0 0;
   border-bottom: 1px solid #b1d4e0;
 }
@@ -29,6 +29,7 @@
 #post-content p {
   font-size: 1.4rem;
   color: #0c2d48;
-  margin-left: 0.4rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  padding: 0 1.5rem;
 }

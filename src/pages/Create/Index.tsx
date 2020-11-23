@@ -54,7 +54,11 @@ function Create(props: any) {
             />
           </div>
           <section className="unsplash-icon">
-            <a rel="noopener norefer" href="https://unsplash.com/">
+            <a
+              target="_blank"
+              rel="noopener norefer"
+              href="https://unsplash.com/"
+            >
               <RiUnsplashFill />
               <h6>Procure por imagens nesse site e cole a url logo acima.</h6>
             </a>

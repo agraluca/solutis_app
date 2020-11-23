@@ -15,8 +15,8 @@ function Landing() {
         <section>
           <Logo />
           <p>
-            Interdum et fames ac ante ipsum. Aenean dapibus ullamcorper
-            efficitur.
+            Um local para escrever o que quiser, do jeito que quiser, na hora
+            que quiser!
           </p>
           <div className="enter-view">
             <Link to="/view" className="enter-view">

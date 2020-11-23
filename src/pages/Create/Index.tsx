@@ -56,7 +56,7 @@ function Create(props: any) {
           <section className="unsplash-icon">
             <a
               target="_blank"
-              rel="noopener norefer"
+              rel="noopener noreferrer"
               href="https://unsplash.com/"
             >
               <RiUnsplashFill />

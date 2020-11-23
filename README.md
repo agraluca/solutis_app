@@ -39,6 +39,7 @@ Technologias que eu utilizei desenvolvendo essa aplicação:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Axios](https://github.com/axios/axios)
 - [React Router DOM](https://reacttraining.com/react-router/)
+- [Redux](https://redux.js.org/)
 
 Além disso implementei as seguintes funcionalidades:
 

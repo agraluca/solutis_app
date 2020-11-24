@@ -5,7 +5,7 @@ import Posts from "../../components/Posts/Index";
 import Header from "../../components/Header/Index";
 import Skeleton from "../../components/Skeleton/Index";
 import { Link } from "react-router-dom";
-import api from "../../services/api";
+import { newPost } from "../../action/postAction";
 
 import "./view.css";
 
@@ -18,8 +18,7 @@ function View() {
 
   useEffect(() => {
     async function getPosts() {
-      const res = await api.get("/view");
-      dispatch({ type: "GET_POST", payload: res.data.reverse() });
+      dispatch(newPost());
       setIsLoading(false);
     }
     getPosts();

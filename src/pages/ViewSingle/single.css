@@ -9,14 +9,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1100px;
+  max-width: 750px;
   margin-bottom: 0.5rem;
   padding: 0.5rem 0 5rem 0;
 }
 
 .single-post .edit-delete button {
   cursor: pointer;
-  background: #B80600;
+  background: #b80600;
   color: #fff;
   margin: 2rem 0;
   padding: 1.5rem;
@@ -43,7 +43,6 @@
   justify-content: space-evenly;
 }
 .single-post .edit-delete a {
-
   width: 65%;
   display: flex;
   background: #509183;

@@ -10,6 +10,7 @@ import { newPost } from "../../action/postAction";
 import "./view.css";
 
 import { RootState } from "../../store";
+import { Post } from "../../store/posts";
 
 function View() {
   const posts = useSelector((state: RootState) => state.postsReducer.posts);
@@ -39,8 +40,8 @@ function View() {
         <Header />
 
         <main className="grid-template">
-          {!isLoading &&
-            posts.map((post: any) => {
+          {!isLoading ? (
+            posts.map((post: Post) => {
               return (
                 <Link key={post._id} to={`/view/${post._id}`}>
                   <Posts
@@ -50,7 +51,13 @@ function View() {
                   />
                 </Link>
               );
-            })}
+            })
+          ) : (
+            <>
+              <Header />
+              <Skeleton />
+            </>
+          )}
         </main>
       </div>
     </div>

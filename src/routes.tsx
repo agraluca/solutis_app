@@ -17,7 +17,7 @@ function Routes() {
         <Route path="/view" exact component={View} />
         <Route path="/view/:id" exact component={ViewSingle} />
         <Route path="/view/:id/edit" exact component={Edit} />
-        <Route path="/create" exatct component={Create} />
+        <Route path="/create" exact component={Create} />
         <Route path="/*" component={NotFound} />
       </Switch>
     </BrowserRouter>

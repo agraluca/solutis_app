@@ -31,7 +31,7 @@ function Edit(props: any) {
       description,
       imageUrl: url,
     });
-    props.history.push("/");
+    props.history.push("/view");
   }
 
   return (

@@ -44,7 +44,8 @@ function ViewSingle(props: any) {
 
   function handleDelete() {
     api.delete(`/view/${params.id}`);
-    props.history.push("/");
+    // dispatch(resetPost());
+    props.history.push("/view");
   }
 
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import Posts from "../../components/Posts/Index";
@@ -13,26 +13,18 @@ import { RootState } from "../../store";
 import { Post } from "../../store/posts";
 
 function View() {
-  const posts = useSelector((state: RootState) => state.postsReducer.posts);
-  const [isLoading, setIsLoading] = useState(true);
+  const { posts, loading } = useSelector(
+    (state: RootState) => state.postsReducer
+  );
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    async function getPosts() {
-      dispatch(newPost());
-      setIsLoading(false);
-    }
-    getPosts();
+  const getPosts = useCallback(() => {
+    dispatch(newPost());
   }, [dispatch]);
 
-  if (isLoading) {
-    return (
-      <>
-        <Header />
-        <Skeleton />
-      </>
-    );
-  }
+  useEffect(() => {
+    getPosts();
+  }, [dispatch, posts, getPosts]);
 
   return (
     <div id="page-post">
@@ -40,7 +32,7 @@ function View() {
         <Header />
 
         <main className="grid-template">
-          {!isLoading ? (
+          {loading ? (
             posts.map((post: Post) => {
               return (
                 <Link key={post._id} to={`/view/${post._id}`}>
